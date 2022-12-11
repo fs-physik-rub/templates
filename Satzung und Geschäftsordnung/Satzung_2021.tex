@@ -1,0 +1,331 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{a4wide}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{cleveref}
+\usepackage{ulem}
+\usepackage{enumitem}
+\usepackage{tocloft}
+
+\renewcommand{\labelenumi}{§ \arabic{enumi}}
+\renewcommand{\labelenumii}{(\arabic{enumii})}
+\renewcommand{\labelenumiii}{\alph{enumiii})}
+\renewcommand{\labelenumiv}{\Roman{enumiv}.}
+
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\theenumii}{ Abs. \arabic{enumii}}
+\renewcommand{\theenumiii}{lit. \alph{enumiii}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dieser Befehl ermöglicht die Wahl der Schriftart
+\newcommand{\changefont}[3]{\fontfamily{#1}\fontseries{#2}\fontshape{#3}\selectfont}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\streichen}[1]{\textcolor{red}{\sout{#1}}}
+\newcommand{\neu}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\formalneu}[1]{\textcolor{blue}{#1}}
+\newcommand{\formalstreichen}[1]{\textcolor{violet}{\sout{#1}}}
+
+\newcommand{\vv}{VV}
+\newcommand{\vvs}{VVen}
+\newcommand{\rat}{FSR}
+\newcommand{\rates}{FSR}
+
+\title{\textsc{Satzung der Fachschaft für Physik und Astronomie der Ruhr-Universität Bochum}}
+\date{12.\,Mai 2021}
+
+\begin{document}
+
+\crefname{enumi}{§}{§§}
+
+\newcommand{\cen}[1]{\Paragraph{\textsc{#1}}}
+\newcommand{\cc}[1]{\begin{center} \Large\bf \Kapitel{\textsc{#1}} \end{center}}
+
+\changefont{ppl}{m}{n}
+
+\newcommand{\ubersicht}{Übersicht} 
+\newlistof{Kapitel}{uber}{\ubersicht}
+
+\renewcommand{\theKapitel}{Kapitel \Roman{Kapitel}}
+\cftsetindents{Kapitel}{0em}{2.0em}
+\newcommand{\Kapitel}[1]{% 
+	\refstepcounter{Kapitel} \par \textsc{\theKapitel.} #1 \addcontentsline{uber}{Kapitel}{\protect\numberline{\Roman{Kapitel}}#1}\par}
+
+\newlistentry{Paragraph}{uber}{1} 
+\renewcommand{\theParagraph}{§ \arabic{Paragraph}}
+\cftsetindents{Paragraph}{2.0em}{2.2em}
+\newcommand{\Paragraph}[1]{% 
+	\refstepcounter{Paragraph} \par  #1 \addcontentsline{uber}{Paragraph}{\protect\numberline{\theParagraph}#1}\par}
+
+\cftpagenumbersoff{Paragraph}
+
+\setcounter{uberdepth}{2}
+
+\maketitle
+\thispagestyle{empty}
+	\begin{center} \Large\bf \textsc{Präambel} \end{center}
+	Die Fachschaft für Physik und Astronomie an der Ruhr-Universität Bochum tritt für die Freiheit der Forschung, der Lehre und des Studiums ein. Sie tritt für Gleichstellung und gegen Diskriminierung ein; insbesondere darf keine Person aufgrund ihres Geschlechts, ihrer Abstammung, ihrer Staatsangehörigkeit, ihrer Heimat oder Herkunft, ihrer Sprache oder Kommunikationsform, ihrer sexuellen Identität, ihrer Behinderung oder chronischen Erkrankung, ihres Glaubens, ihrer religiösen oder politischen Anschauungen oder ihrer sozialen Situation benachteiligt werden.
+	
+	\newpage
+	
+%	\listofKapitel
+%   \newpage	
+
+	\cc{Allgemeine Bestimmungen}
+	
+	\begin{enumerate}[leftmargin=0cm]
+		
+	\item \cen{Die Fachschaft}
+
+	Die an der Ruhr-Universität Bochum (RUB) im Fachbereich Physik eingeschriebenen Studierenden und Promotionsstudierenden bilden die Fachschaft Physik und Astronomie an der Ruhr-Universität Bochum (i.F. als Fachschaft bezeichnet). 
+
+	\item \cen{Aufgaben der Fachschaft}\label{AufgabenderFS}
+	\begin{enumerate}[leftmargin=0cm]
+	 \item Die Fachschaft hat an der Erledigung der Aufgaben der Studierendenschaft (§~3 Satzung der Studierendenschaft der RUB) mitzuwirken. Sie nimmt das allgemeinpolitische Mandat wahr.
+	 \item Die Fachschaft hat unbeschadet der Zuständigkeit der Studierendenschaft insbesondere die folgenden Aufgaben: 
+	
+	\begin{enumerate}[leftmargin=0.5cm]
+		\item die Belange ihrer Mitglieder in der Fakultät Physik und Astronomie wahrzunehmen,
+		\item die Interessen ihrer Mitglieder im Rahmen dieser Satzung und aller daran angeschlossenen Ordnungen zu vertreten,
+		\item an der Erfüllung der Aufgaben der Hochschulen (§~3 Hochschulgesetz NRW) mitzuwirken,
+		\item fachliche und soziale Belange ihrer Mitglieder wahrzunehmen,
+		\item kulturelle Belange ihrer Mitglieder wahrzunehmen,
+		\item die Beziehungen zu anderen Physikfachschaften zu pflegen, und
+		\item im Falle eines unprovozierten extraterrestrischen Angriffs Schaden vom Fachschaftsraum abzuwenden.\label{alienangriff}
+	\end{enumerate}
+	
+\end{enumerate}
+	
+	\item \cen{Organe und Gremien der Fachschaft}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Die Organe der Fachschaft sind
+		\begin{enumerate}[leftmargin=0.5cm]
+			\item die Fachschaftsvollversammlung (\vv) und
+			\item der Fachschaftsrat (\rat).
+		\end{enumerate}
+		\item Die weiteren Gremien der Fachschaft sind die Ausschüsse des \rates.
+	\end{enumerate}
+	
+	\item \cen{Verfahrensgrundsätze}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Die Organe und weiteren Gremien der Fachschaft tagen öffentlich, sofern der Gegenstand der Beschlussfassung dem nicht entgegensteht. Zu ihren Sitzungen ist mit angemessener Vorlaufzeit zumindest fachschaftsöffentlich einzuladen.
+		\item Die Organe und weiteren Gremien der Fachschaft fassen ihre Beschlüsse mit einfacher Mehrheit, wenn durch Gesetz, diese Satzung oder eine Geschäftsordnung nichts Anderes geregelt ist.
+		\item  Beschlüsse der Organe und weiteren Gremien der Fachschaft sind in einem Protokoll festzuhalten und – soweit  der Gegenstand der Beschlussfassung dem nicht entgegensteht, sonst redigiert – in geeigneter Weise zumindest fachschaftsöffentlich bekannt zu machen. Näheres regeln  Geschäftsordnungen. 
+	\end{enumerate}
+	
+	\cc{Fachschaftsvollversammlung (VV)}
+	
+	\item \cen{Aufgaben der Fachschaftsvollversammlung}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Die \vv~ist das oberste beschlussfassende Organ der Fachschaft.
+		\item Die \vv~hat das nicht übertragbare Recht
+		\begin{enumerate}[leftmargin=0.5cm]
+			\item den \rat~zu wählen oder zu entlasten und
+			\item die Satzung der Fachschaft zu beschließen, zu ändern oder aufzuheben.
+		\end{enumerate}
+		\item Aufgabe der \vv~ist es
+		\begin{enumerate}[leftmargin=0.5cm]
+			\item die Arbeit und Wirtschaftsführung des \rates~zu prüfen,
+			\item eine Wahlliste für Wahlen zu studentischen Mitgliedern im Fakultätsrat der Fakultät für Physik und Astronomie der RUB aufzustellen,
+			\item in grundsätzlichen Angelegenheiten der Fachschaft zu beschließen und
+			\item die aus dieser Satzung resultierenden Ordnungen und Pläne, insbesondere
+			die Geschäftsordnung (GO) und
+			die Datenschutzrichtlinie des \rates, sowie
+			die Haushaltsordnung und
+			den Haushaltsplan der Fachschaft,
+			zur Kenntnis zu nehmen.
+		\end{enumerate}
+	\end{enumerate}
+
+	\item \cen{Beauftragte der Fachschaftsvollversammlung}\label{BeauftragteVV}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Zur Durchführung ihrer Arbeit verfügt die \vv~über
+		eine Versammlungsleitung,
+		eine Wahlleitung und
+		eine Protokollführung. Diese Beauftragten werden durch den \rat~vorläufig festgelegt. Die \vv~kann hiervon durch Beschluss abweichen.
+		\item Die Versammlungsleitung leitet die \vv~nach Maßgabe dieser Satzung  und legt diese Satzung während der Versammlung aus.
+		\item Die Protokollführung erstellt ein Ergebnisprotokoll der \vv, welches zentrale Diskussionspunkte enthalten soll. Sie ist für Richtigkeit und Vollständigkeit des Protokolls verantwortlich, welches sie binnen zwei Wochen nach der \vv~dem \rat~zur Prüfung übergibt. Dieses ist von der Protokollführung und der Wahlleitung zu unterzeichnen.
+		\item Die Wahlleitung wird nur  im Falle von Wahlen explizit bestimmt.  Sie soll insbesondere das Wahlverfahren erläutern und auf die Rechte der Abstimmenden hinweisen. Die Wahlleitung kann nicht selbst zur Wahl stehen.
+	\end{enumerate} 
+
+	\newpage
+
+	\cc{Fachschaftsrat (\rat)}
+
+	\item \cen{Aufgaben des Fachschaftsrates}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Der \rat~hat die Aufgabe die Geschäfte der Fachschaft zu führen und die Aufgaben gemäß \ref{AufgabenderFS} wahrzunehmen. Dazu zählt insbesondere
+		\begin{enumerate}[leftmargin=0.5cm]
+			\item die Fachschaft nach außen hin zu vertreten,
+			\item die \vv~einzuberufen, vorzubereiten und ihre Beschlüsse umzusetzen,
+			\item einen Vorschlag für die Wahlliste zum Fakultätsrat in die \vv~einzubringen,
+			\item den Haushaltsplan festzustellen, zu ändern und dessen Einhaltung zu kontrollieren, 
+			\item die Protokolle von Sitzungen der Organe und weiteren Gremien der Fachschaft digital und analog zu archivieren und Möglichkeiten zur Einsicht bereitzustellen,
+			\item Vertreter für die Fachschaft in sonstige, die Gesamtinteressen der Fachschaft berührende Einrichtungen und Organe zu entsenden oder Vorschläge für die Ernennung einzureichen. Dazu zählen insbesondere\label{VertreterDerFS}
+			\begin{enumerate}[leftmargin=0.75cm]
+				\item die Fachschaftsvertreter:innenkonferenz (FSVK) und
+				\item die Gremien und Arbeitskreise der Fakultät und
+			\end{enumerate}
+			\item die entsendeten Vertreter nach lit. f in ihren Tätigkeiten zu unterstützen.
+		\end{enumerate}
+		\item Zur Erledigung seiner Aufgaben verabschiedet der \rat
+		\begin{enumerate}[leftmargin=0.5cm]
+			\item den Haushaltsplan und die Haushaltsordnung der Fachschaft,
+			\item die Geschäftsordnung des \rates~(GO) unter Beachtung von \ref{GOdesRates} und
+			\item die Datenschutzrichtlinie des \rates.
+		\end{enumerate}
+		\item Der \rat~ist der \vv~gegenüber rechenschaftspflichtig.
+	\end{enumerate}
+
+	\item \cen{Zusammensetzung und Amtszeit}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Der \rat~besteht aus mindestens 5 und höchstens 21 Mitgliedern der Fachschaft.\label{Ratsbegrenzung} Seine Mitglieder werden für eine Amtszeit von einem
+		Semester gewählt.
+		Bis zur Konstituierung eines neuen \rates~bleiben die bisherigen Mitglieder geschäftsführend im Amt.
+		\item Grundlegende Ämter ergeben sich aus der GO. Insbesondere werden Ratsmitglieder
+		mit Ämtern betraut entsprechend der Aufgaben \label{AmterDesRates}
+		\begin{enumerate}[leftmargin=0.5cm]
+			\item Vertretung der Fachschaft,
+			\item Finanzverwaltung,
+			\item Kassenverwaltung (zwei) und
+			\item IT-Verwaltung.
+		\end{enumerate}
+		\item Zugehörige Amtsbezeichnungen sind Sprecher (a), Finanzreferent (b), Kassenwart (c) bzw. IT-Beauftragter (d) oder andersgeschlechtliche Entsprechungen.
+		\item Mit der Vertretung der Fachschaft im neuen \rat~wird das bei der Wahl höchstplatzierte Ratsmitglied betraut, welches das Amt annimmt. Bei Stimmengleichheit entscheidet das Los. Der \rat~kann das Amt umbesetzen. Sollte kein Ratsmitglied das Amt annehmen, so führt es bis zur Konstituierenden Sitzung die verantwortliche Person des alten \rates.
+		\item Das für die Finanzverwaltung zuständige Ratsmitglied hat das Recht Einsicht in das Konto zu nehmen.
+	\end{enumerate}
+
+	\item \cen{Ausscheiden und Neuwahlen}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Einzelne Ratsmitglieder scheiden aus dem \rat~aus durch Rücktritt, Abwahl auf einer \vv, Exmatrikulation oder Tod. Rücktritte müssen schriftlich niedergelegt werden. Ein Nachrücken findet ausschließlich infolge eines Ausscheidens durch Tod unter den Umständen von §~2 Abs. 2 lit. g statt.\label{AusscheidenRat} 
+		\item Eine Neuwahl des \rates~wird erforderlich, wenn mehr als 20\% des ursprünglich gewählten \rates~durch Abwahl oder Rücktritt ausscheiden oder die Mindestmitgliederzahl nach \cref{Ratsbegrenzung} unterschritten wird. Die Neuwahl ist durch die \vv~binnen 14 Tagen der Vorlesungszeit durchzuführen. \label{Neuwahlerf}
+	\end{enumerate}
+
+	\cc{Verfahrensregeln für die VV}
+
+	\item \cen{Einberufung, Tagesordnung (TO) und Beschlussfähigkeit}\label{EinberufungVV}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Die \vv~tritt mindestens einmal in der Vorlesungszeit eines jeden Semesters zusammen. Sie ist unter Angabe einer vorläufigen TO mindestens eine Woche vorher und innerhalb der Vorlesungszeit fachschaftsöffentlich einzuberufen. Die \vv~ist beschlussfähig, wenn sie ordnungsgemäß einberufen wurde. Über die Einberufung sind der AStA und die FSVK in Kenntnis zu setzen.
+		\item Abweichend von Absatz 1 muss eine \vv~auf ein schriftliches Verlangen von mindestens 2\% der Mitglieder der Fachschaft einberufen werden, welches die TO vorläufig und den Termin endgültig festsetzt. Für die Ankündigung sind dem \rat~mindestens sieben Tage zu gewähren. Eine solche, \textit{außerordentliche}, \vv~ist beschlussfähig, wenn zu Beginn der \vv~
+		mindestens~5\% der Mitglieder der Fachschaft anwesend sind.
+		\item Die TO kann nur durch Punkte ergänzt werden, welche mindestens vier Tage vor der \vv~beim \rat~eingegangen sind. Hiervon ausgenommen sind Neuwahlen des \rates~in Folge von \cref{Neuwahlerf}. Der \rat~hat Anträge zur TO spätestens zwei Tage vor der \vv~fachschaftsöffentlich bekannt zu machen. Die Neuwahl des \rates~ist mindestens einmal im Semester, Arbeitsaufträge an den \rat~sind stets Gegenstand der TO.
+	\end{enumerate}
+
+	\newpage
+
+	\item \cen{Wahlen auf der Fachschaftsvollversammlung}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Wahlen im Sinne dieser Satzung sind diejenigen Abstimmungen auf der \vv, die in dieser Satzung ausdrücklich als Wahlen bezeichnet werden. Wahlen werden durch die Wahlleitung geleitet. Sie erfolgen geheim.
+	 	\item Sofern durch diese Satzung nicht anders bestimmt, hat jedes Mitglied der Fachschaft bei der Wahl so viele Stimmen, wie es Kandidierende gibt. Für die Gültigkeit einer Stimme genügt eine eindeutige Willensbekundung auf dem Wahlzettel. Stimmenhäufung ist unzulässig.\label{StimmenbegrenzungFSR}
+	 	\item Binnen 14~Tagen nach Veröffentlichung des Wahlergebnisses\streichen{,} kann jedes Mitglied der Fachschaft namentlich, schriftlich und begründet bei der Wahlleitung Einspruch gegen eine Wahl erheben. Der \rat~hat das Wahlprüfungsverfahren mittels eines Wahlprüfungsaus\neu{s}chusses unter Vorsitz der Wahlleitung und unter entsprechender Anwendung der Wahlordnung für das Studierendenparlament durchzuführen.
+	\end{enumerate}
+
+	\item \cen{Bestimmungen zur Wahl des Fachschaftsrates}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Jedes Mitglied der Fachschaft besitzt bei der Wahl zum \rat~grundsätzlich passives Wahlrecht. Eine Kandidatur erfolgt dabei
+		persönlich auf einer Sitzung des \rates~oder der \vv~oder
+		direkt in Textform an das mit der Vertretung der Fachschaft betraute Ratsmitglied oder die Versammlungsleitung.
+		\item Die mögliche Anzahl an Ratsmitgliedern im zu wählenden \rat~ist durch die \vv~vor der Wahl unter Beachtung von \cref{Ratsbegrenzung} festzulegen. \label{RatsbegrenzungEff}
+		\item Jedes Mitglied der Fachschaft hat bei der Wahl zum \rat~aktives Wahlrecht. Es verfügt über Zwei Drittel Mal so viele Stimmen wie es Kandidierende gibt (abgerundet), mindestens jedoch so viele wie die mögliche Anzahl an Ratsmitgliedern im zu wählenden \rat.
+		\item Um als Ratsmitglied gewählt zu sein, muss eine Person mindestens 30\% der Stimmen auf sich vereinigen. Die Personen, die das Quorum nach Satz 1 erreicht haben, werden absteigend nach der Anzahl der auf sie entfallenden Stimmen gereiht und ziehen bis zum Erreichen der zuvor festgesetzten Mitgliederzahl gemäß \cref{RatsbegrenzungEff} nacheinander in den \rat~ein. Bei Stimmengleichheit entscheidet eine Stichwahl über den Einzug in den \rat, sofern dies im Rahmen der \vv~auftritt, ansonsten das Los. Sollte eine Person die Wahl ablehnen, wird nachgerückt. 
+		\item Unmittelbar vor der Wahl kann jedes Mitglied der Fachschaft genau einmal gegen genau eine kandidierende Person einen Misstrauensantrag stellen. Zur Annahme eines Misstrauensantrags ist eine Zwei-Drittel-Mehrheit der Anwesenden erforderlich. Bei Annahme des Antrags ist dieser Person für diese \vv~das passive Wahlrecht entzogen.
+	\end{enumerate}
+	
+	\newpage
+	
+	\item \cen{Bestimmungen zur studentischen Wahlliste für den Fakultätsrat}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Die durch den \rat~vorgeschlagene vorläufige Wahlliste kann durch die \vv~durch Abstimmung ergänzt oder gekürzt werden; die Abstimmung über Änderungen entfällt, sofern sich kein Widerspruch erhebt.
+		\item Die Reihung auf der endgültigen Liste wird durch die Anzahl der erhaltenen Stimmen in der Wahl festgelegt, sie ist absteigend entsprechend der Stimmenzahl vorzunehmen. Bei Gleichstand entscheidet das Los.
+		\item Bei weniger als sechs Kandidierenden ist die Wahl vorläufig abzubrechen. Die \vv~entscheidet über das weitere Vorgehen.
+	\end{enumerate}
+
+	\item \cen{Abstimmungen}
+	
+	\begin{enumerate}[leftmargin=0cm]
+		\item Jedes Mitglied der Fachschaft hat auf der \vv~Rede-, Antrags- und Stimmrecht.
+		\item Die Versammlungsleitung gibt vor der Abstimmung den Wortlaut des Antrags bekannt.
+		\item Abstimmungen erfolgen grundsätzlich offen per Handzeichen. 
+		Auf Antrag muss eine geheime Abstimmung geheim durchgeführt werden, sofern die Versammlungsleitung nicht begründet widerspricht. Bei Widerspruch ist über das Stattfinden einer geheimen Abstimmung offen abzustimmen.
+		\item Im Falle mehrerer Anträge zu derselben Sachen, wird über den weitestgehenden Antrag zuerst abgestimmt. Die Versammlungsleitung schlägt eine Reihung vor; über Widerspruch einer antragstellenden Person entscheiden die Anwesenden durch offene Abstimmung. Sobald ein Antrag die notwendige Mehrheit gefunden hat, entfallen alle Übrigen.
+	\end{enumerate}
+
+	\cc{Verfahrensregeln für den FSR}
+
+	\item \cen{Konstituierung des Fachschaftsrates}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Ein neu gewählter \rat~hat sich binnen zwei Wochen nach seiner Wahl zu konstituieren. Die konstituierende Sitzung ist durch das mit der Vertretung der Fachschaft betraute Ratsmitglied fachschaftsöffentlich einzuberufen.
+		\item Der sich konstituierende \rat~soll insbesondere die Ämter gemäß \cref{AmterDesRates} besetzen und eine GO verabschieden; die Verabschiedung einer GO entfällt genau dann, wenn diejenige des vorangehenden \rates~übernommen wird.
+	\end{enumerate}
+
+	\item \cen{Sitzungen des Fachschaftsrates}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Der \rat~tagt in der Regel mindestens einmal in zwei Wochen. Hiervon kann insbesondere während den Ferienzeiten abgewichen werden.
+		\item Jedes Ratsmitglied hat grundsätzlich Rede- und Antragsrecht. Jedes Mitglied der Fachschaft darf an den Sitzungen des \rates~grundsätzlich teilnehmen und ist den Ratsmitgliedern im Rederecht grundsätzlich gleichgestellt.
+		\item Jedem Mitglied der Fachschaft ist auf einer Sitzung die Möglichkeit zu geben Anfragen an den \rat~zu stellen. Des Weiteren hat der \rat~Möglichkeiten zur Einreichung von Anträgen bereitzustellen.
+		\item Eine Sitzung ist beschlussfähig, wenn sie ordnungsgemäß einberufen wurde und mindestens drei, sofern der \rat~aus höchtens acht Ratsmitgliedern besteht, ansonsten vier Ratsmitglieder anwesend sind.
+		Die GO kann erhöhte Anforderungen an die Beschlussfähigkeit vorsehen.
+		\item Protokolle sollen mit angemessener Vorlaufzeit vor der nächsten Sitzung des \rates~vorliegen. Die GO kann Ausnahmen hiervon vorsehen.
+		\item Alles weitere regelt die GO.
+	\end{enumerate}
+			
+	\item \cen{Geschäftsordnung des Fachschaftsrates (GO)}	\label{GOdesRates}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Die GO hat, unter Beachtung der Vorgaben dieser Satzung, insbesondere das Folgende zu regeln:
+		Die Aufgaben der in \cref{AmterDesRates} genannten Ämter,
+		die Einberufung von Sitzungen,
+		die Veröffentlichung und Führung von Sitzungsprotokollen,
+		das Nähere zu Ausschüssen,
+		das Nähere zur Haushalts- und Wirtschaftsführung und
+		den Ablauf von Wahlen und Abstimmungen.
+		\item Der \rat~kann sich in seiner GO weitere Möglichkeiten der Beschlussfassung eröffnen. Abstimmungen, welche über ein solches Abstimmungsverfahren abgehalten werden, benötigen jedoch zumindest die Zustimmung der absoluten Mehrheit der Ratsmitglieder und müssen für diese nachvollziehbar sein. Die Beschlüsse sind zeitnah in geeigneter Weise zumindest fachschaftsöffentlich bekannt zu machen.
+		\item Für die Verabschiedung der oder Änderungen an der GO ist eine Zwei-Drittel-Mehrheit des gesamten \rates~erforderlich; sie treten eine Woche nach fachschaftsöffentlicher Bekanntmachung in Kraft. Ein Beschluss zur Änderung kann mit einfacher Mehrheit vor Inkrafttreten der Änderung annuliert werden. 
+	\end{enumerate}
+
+	\cc{Schlussbestimmungen}
+	
+	\item \cen{Fachschaftsöffentlichkeit}
+	
+	Soweit in dieser Satzung oder ihren angeschlossenen Ordnungen von fachschaftsöffentlicher Bekanntmachung oder Einladung die Rede ist, erfolgt diese mindestens durch Aushang im oder am Fachschaftsraum oder dem Glaskasten der Fachschaft. Des Weiteren ist, soweit dies unter angemessenem Aufwand möglich ist, ein dafür vorgesehener E-Mail-Verteiler für die Bekanntmachung zu nutzen, in welchen sich jedes Mitglied der Fachschaft eintragen lassen kann.
+	
+	\item \cen{Datenschutz}
+	
+	\begin{enumerate}[leftmargin=0cm]
+		\item Die Verarbeitung von personenbezogenen Daten Studierender findet, insoweit
+		sie für die Wahrnehmung der Aufgaben des FSR oder für die Bereitstellung von Angeboten erforderlich ist, unter der Maßgabe der Datensparsamkeit statt.
+		\item Personenbezogene Daten sind gesichert aufzubewahren, ein unautorisierter Zugriff ist bestmöglich zu unterbinden.
+		\item Dem FSR obliegt es, Möglichkeiten bereitzustellen, um Ansprüche, die sich aus dem anwendbaren Datenschutzrecht ergeben, bearbeiten zu können.
+	\end{enumerate}
+	
+	\item \cen{Geltungsbereich}
+	
+	Diese Satzung gilt nur so weit, wie sie nicht Regelungen durch Gesetz oder die Satzung der Studierendenschaft zuwiderläuft.
+	
+	\item \cen{Haushalts- und Wirtschaftsführung}
+	
+	Die Fachschaft für Physik und Astronomie ist selbstbewirtschaftet.
+	
+	\item \cen{Bestimmungen aufgrund der Covid-19-Epidemie}
+	
+	\begin{enumerate}[leftmargin=0cm]
+		\item Abweichend von § 18 ist für eine fachschaftsöffentliche Bekanntmachung von Protokollen bzw. Einladung zu Sitzungen des \rates~und der Ausschüsse des \rates~die Bekanntmachung bzw. Einladung über einen E-Mail-Verteiler hinreichend, in welchen sich jedes Mitglied der Fachschaft eintragen lassen kann.
+		\item § 21 tritt außer Kraft, wenn der Deutsche Bundestag die epidemische Lage nationaler Tragweite (§ 5 IfSG) für beendet erklärt, spätestens jedoch am 01.\,Januar 2022.
+	\end{enumerate}
+	
+	\item \cen{Änderung und Inkrafttreten der Satzung}
+	\begin{enumerate}[leftmargin=0cm]
+		\item Die \vv~verabschiedet und ändert die Satzung der Fachschaft mit einer Zwei-Drittel-Mehrheit.
+		\item Diese Satzung tritt am Tag nach der Verabschiedung durch die \vv~in
+		Kraft und ersetzt die bisher gültige Satzung. Änderungen sind dem Satzungsausschuss des Studierendenparlaments zur Kenntnis zu geben.
+	\end{enumerate}
+	
+	\end{enumerate}
+
+%\clearpage
+%\section*{Kontroverse Punkte}
+%\paragraph{§16 Abs. (2)} Jedes Ratsmitglied hat grundsätzlich Rede- und Antragsrecht. Jedes Mitglied der Fachschaft darf an den Sitzungen des \rates~grundsätzlich teilnehmen und ist den Ratsmitgliedern im Rederecht grundsätzlich gleichgestellt\neu{, soweit es an Debatten teilnimmt}.
+
+\end{document}

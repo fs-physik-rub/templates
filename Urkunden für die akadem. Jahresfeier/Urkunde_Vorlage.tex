@@ -1,0 +1,74 @@
+\documentclass[a4paper,12pt]{scrreprt}
+\usepackage{calligra}
+\usepackage{ngerman}
+\usepackage[T1]{fontenc}
+\usepackage{eso-pic,graphicx}
+\newcommand{\changefont}[3]{
+\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+\usepackage{type1cm}
+\usepackage[latin1]{inputenc}
+\usepackage{multicol}
+
+\makeatletter
+\newcommand\BackgroundPicture[3]{%
+  \setlength{\unitlength}{1pt}%
+  \put(0,\strip@pt\paperheight){%
+    \parbox[t][\paperheight]{\paperwidth}{%
+      \vfill
+      \centering\includegraphics[width=21.4cm]{phi_wz.eps}
+      \vfill
+    }
+  }
+} 
+\makeatother
+
+\AddToShipoutPicture{\BackgroundPicture}
+
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+\includegraphics[width=3cm]{physik_logo.eps}
+\end{center}
+\centering
+\calligra
+\begin{center}
+\fontsize{2.5cm}{2cm}\selectfont
+Urkunde
+\end{center}
+
+\vspace{10pt}
+\changefont{ppl}{m}{it}
+\fontsize{1cm}{0.5cm}\selectfont
+
+\begin{center}
+\vspace{6pt}
+\textbf{Dozent des Semesters}
+\end{center}
+\vspace{20pt}
+\fontsize{0.75cm}{0.5cm}\selectfont
+Hiermit zeichnet die Fachschaft Physik und Astronomie\\
+\vspace{0.5cm}
+\begin{center}
+\underline{\textit{\textbf{Herrn %Hier den Namen des Dozenten einfügen
+}}}					
+\end{center}
+\vspace{0.5cm}
+als Sieger der Vorlesungsumfrage im Sommersemester 2010\\
+\vspace{0.5cm}
+im Bereich \grqq %Hier den Bereich einfügen
+\grqq\\						
+\vspace{0.5cm}
+f"ur die Vorlesung \grqq %Hier den Namen der Vorlesung eingeben
+\grqq aus.\\					
+\vspace{2.5cm}
+\begin{tabular}{lccr}
+\fontsize{0.5cm}{0.25cm}\selectfont
+\underline{Bochum, den %Hier das aktuelle Datum einfügen
+}&\hspace{1.5cm}&\hspace{1.5cm}&\fontsize{0.5cm}{0.25cm}\selectfont\underline{\hspace{5cm}}\\
+&&&\fontsize{0.25cm}{0.2cm}\selectfont i.A. der Fachschaft Physik und Astronomie\\
+\end{tabular}
+
+\end{document}
+

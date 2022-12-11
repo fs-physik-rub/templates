@@ -1,0 +1,111 @@
+\documentclass[12pt,a4paper]{g-brief2}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+% Wenn es Probleme mit libertine gibt, die vorherige Zeile auskommentieren
+% und die nächsten drei Zeilen verwenden:
+\usepackage{mathpazo}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage[tracking=true]{microtype}
+\usepackage{graphicx}
+\usepackage{calc}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{color}
+
+\DeclareMicrotypeSet*[tracking]{my}{ font = */*/*/sc/* }\SetTracking{ encoding = *, shape = sc }{ 45 }
+
+\rhead[]{}
+\chead[]{}
+\lhead[]{}
+\rfoot[]{}
+\cfoot[Seite~\thepage{} von~\pageref{end}]{Seite~\thepage{} von~\pageref{end}}
+\rfoot[]{}
+\pagestyle{fancy}
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
+\newcommand{\fslogo}{\parbox{\textwidth}{\centering \includegraphics[height=0.585in]{Logo.jpg}}}
+
+\makeatletter
+
+\fenstermarken
+\faltmarken
+\trennlinien
+\unserzeichen
+
+\makeatother
+
+\usepackage{babel}
+
+\begin{document}
+	
+\thispagestyle{empty}
+\Name{\fslogo}
+
+
+\NameZeileA{Ruhr-Universität Bochum}
+\NameZeileB{Fachschaft Physik und Astronomie}
+\NameZeileC{}
+\NameZeileD{\textbf{Raum:}}
+\NameZeileE{NB 02/174}
+\NameZeileF{}
+\NameZeileG{}
+
+\AdressZeileA{Ruhr-Universität Bochum}
+\AdressZeileB{Fachschaft Physik und Astronomie}
+\AdressZeileC{Fach NC 116}
+\AdressZeileD{Universitätsstraße 150}
+\AdressZeileE{44801 Bochum}
+\AdressZeileF{DEUTSCHLAND}
+
+\TelefonZeileA{+49 (0)234 32-28027}
+\TelefonZeileB{}
+\TelefonZeileC{}
+\TelefonZeileD{}
+\TelefonZeileE{}
+\TelefonZeileF{}
+
+\InternetZeileA{https://fachschaft.physik.rub.de/}
+\InternetZeileB{}
+\InternetZeileC{\textbf{Fachschaft:}}
+\InternetZeileD{fachschaft@physik.rub.de}
+\InternetZeileE{\textbf{Fachschaftsrat:}}
+\InternetZeileF{fs-rat@physik.rub.de}
+
+\BankZeileA{}
+\BankZeileB{}
+\BankZeileC{}
+\BankZeileD{}
+\BankZeileE{}
+\BankZeileF{}
+
+\Postvermerk{Hauspost}
+
+\RetourAdresse{RUB $\cdot$ FS Physik $\cdot$ NC 116 $\cdot$ Universitätsstr. 150 $\cdot$ D-44801 Bochum}
+\Adresse{An den\\
+  Dekan der Fakultät für Physik \& Astronomie der Ruhr-Universität Bochum \\
+  Professor Dr. Mustermann}
+
+%\MeinZeichen{Az der Fachschaft}
+\MeinZeichen{}
+%\IhrZeichen{Az der Fakultät}
+\IhrZeichen{}
+%\IhrSchreiben{1.\,April~2018}
+\IhrSchreiben{}
+\Datum{\today}
+\Betreff{Antrag auf -Irgendetwas-}
+\Anrede{Sehr geehrter Dekan Mustermann, sehr geehrte Mitglieder des Fakultätsrates,}
+\Gruss{Mit freundlichen Grüßen,}{0.5cm}
+\Unterschrift{\parbox{\textwidth}{
+    \parbox{65mm}{\noindent\rule{65mm}{1pt}\\
+      (Antragsberechtigter)\\
+      Studentisches Mitglied des \\ Fakultätsrates}}}
+\Anlagen{}
+\Verteiler{\label{end}}
+
+\begin{g-brief}
+  %Inhalt -  bitte möglichst ausführlich gestalten....
+\end{g-brief}
+
+\end{document}
